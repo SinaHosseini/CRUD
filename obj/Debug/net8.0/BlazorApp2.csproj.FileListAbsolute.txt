@@ -1,0 +1,134 @@
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\appsettings.json
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\BlazorApp2.staticwebassets.runtime.json
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\BlazorApp2.exe
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\BlazorApp2.deps.json
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\BlazorApp2.runtimeconfig.json
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\BlazorApp2.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\BlazorApp2.pdb
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.AssemblyInfoInputs.cache
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.AssemblyInfo.cs
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.csproj.CoreCompileInputs.cache
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp2.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp2.props
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp2.props
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp2.props
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\scopedcss\bundle\BlazorApp2.styles.css
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp2.bundle.scp.css
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\refint\BlazorApp2.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.pdb
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.genruntimeconfig.cache
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\ref\BlazorApp2.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Dapper.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Dapper.Contrib.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.csproj.AssemblyReference.cache
+C:\Users\Sina\OneDrive\Documents\VS\BlazorApp2\obj\Debug\net8.0\BlazorApp2.csproj.Up2Date
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.csproj.AssemblyReference.cache
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.AssemblyInfoInputs.cache
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.AssemblyInfo.cs
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.csproj.CoreCompileInputs.cache
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.MvcApplicationPartsAssemblyInfo.cache
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.dll
+C:\work file\BlazorApp2\obj\Debug\net8.0\refint\BlazorApp2.dll
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.pdb
+C:\work file\BlazorApp2\bin\Debug\net8.0\appsettings.Development.json
+C:\work file\BlazorApp2\bin\Debug\net8.0\appsettings.json
+C:\work file\BlazorApp2\bin\Debug\net8.0\BlazorApp2.staticwebassets.runtime.json
+C:\work file\BlazorApp2\bin\Debug\net8.0\BlazorApp2.exe
+C:\work file\BlazorApp2\bin\Debug\net8.0\BlazorApp2.deps.json
+C:\work file\BlazorApp2\bin\Debug\net8.0\BlazorApp2.runtimeconfig.json
+C:\work file\BlazorApp2\bin\Debug\net8.0\BlazorApp2.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\BlazorApp2.pdb
+C:\work file\BlazorApp2\bin\Debug\net8.0\Azure.Core.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Azure.Identity.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Dapper.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Dapper.Contrib.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\System.Memory.Data.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\work file\BlazorApp2\obj\Debug\net8.0\staticwebassets.build.json
+C:\work file\BlazorApp2\obj\Debug\net8.0\staticwebassets.development.json
+C:\work file\BlazorApp2\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp2.Microsoft.AspNetCore.StaticWebAssets.props
+C:\work file\BlazorApp2\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp2.props
+C:\work file\BlazorApp2\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp2.props
+C:\work file\BlazorApp2\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp2.props
+C:\work file\BlazorApp2\obj\Debug\net8.0\staticwebassets.pack.json
+C:\work file\BlazorApp2\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\work file\BlazorApp2\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\work file\BlazorApp2\obj\Debug\net8.0\scopedcss\bundle\BlazorApp2.styles.css
+C:\work file\BlazorApp2\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp2.bundle.scp.css
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.csproj.Up2Date
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.genruntimeconfig.cache
+C:\work file\BlazorApp2\obj\Debug\net8.0\ref\BlazorApp2.dll

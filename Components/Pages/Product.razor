@@ -1,0 +1,112 @@
+﻿@page "/products"
+
+<PageTitle>Product</PageTitle>
+
+
+<h1>Product</h1>
+
+<InputText @bind-Value="tableModel.Name" />
+<button class="btn btn-primary" @onclick="Save">ذخیره</button>
+@if (tableModels == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+
+    foreach (TableModel item in tableModels)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var forecast in forecasts)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Price</td>
+                        <td>@item.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col">
+                @item.Id
+            </div>
+            <div class="col">
+                @item.Name
+            </div>
+            <div class="col">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    ویرایش
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <InputText @bind-Value="tableModel.Name" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                                <button class="btn btn-primary" @onclick="() => Edit(item)">ذحیره تغییرات</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" @onclick="() => Del(item)">حذف</button>
+            </div>
+        </div>
+        <hr />
+    }
+}
+@code
+{
+    private IEnumerable<TableModel> tableModels { get; set; }
+    TableModel tableModel = new();
+    private async void Save()
+    {
+        if (tableModel.Id > 0)
+        {
+            await _dsProduct.TableChange(2, tableModel);
+        }
+        else
+        {
+            await _dsProduct.TableChange(1, tableModel);
+        }
+        tableModels = await _dsProduct.Table1Select();
+        tableModel = new();
+        this.StateHasChanged();
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        tableModels = await _dsProduct.Table1Select();
+
+    }
+    private async void Edit(TableModel tm)
+    {
+        tableModel = tm;
+    }
+    private async void Del(TableModel tm)
+    {
+        await _dsProduct.TableChange(3, tm);
+        tableModels = await _dsProduct.Table1Select();
+        tableModel = new();
+        this.StateHasChanged();
+    }
+}
