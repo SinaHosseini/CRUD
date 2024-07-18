@@ -1,35 +1,44 @@
 ﻿@page "/products"
 
 <PageTitle>Product</PageTitle>
-
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/app.css" rel="stylesheet" />
-</head>
-
-<script src="wwwroot\js\bootstrap.js"></script>
-
 <h1>Product</h1>
-<div style="margin-top: 16px;">
-    <div class="col">
-        <div class="row">
-            <InputText class="form-control" @bind-Value="tableModel.Name" placeholder="نام محصول را وارد کنید " />
-        </div>
+<hr />
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" @onclick="OpenNewModal">محصول جدید</button>
 
-        <div class="row" style="margin-top: 5px;">
-            <InputNumber class="form-control" @bind-Value="tableModel.Price" placeholder="قیمت محصول را وارد کنید " />
-        </div>
-        <div class="row" style="margin-top: 5px;">
-            <InputText class="form-control" @bind-Value="tableModel.Type" placeholder="نوع محصول را وارد کنید " />
+<!-- Modal -->
+@if (OpenModal)
+{
+    <div class="modal fade show" style="display: block;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">@modalTitle</h1>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="CloseModal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="margin-top: 16px;">
+                        <div class="col">
+                            <div class="row">
+                                <InputText class="form-control" @bind-Value="tableModel.Name" placeholder="نام محصول را وارد کنید " />
+                            </div>
+                            <div class="row" style="margin-top: 5px;">
+                                <InputNumber class="form-control" @bind-Value="tableModel.Price" placeholder="قیمت محصول را وارد کنید " />
+                            </div>
+                            <div class="row" style="margin-top: 5px;">
+                                <InputText class="form-control" @bind-Value="tableModel.Type" placeholder="نوع محصول را وارد کنید " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="CloseModal">بستن</button>
+                    <button class="btn btn-success" @onclick="Save">ذخیره</button>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col">
-        <button class="btn btn-success" style=" margin-top: 10px; text-align: center;" @onclick="Save">ذخیره</button>
-    </div>
-</div>
+}
 
 @if (tableModels == null)
 {
@@ -57,31 +66,7 @@ else
                     <td>@item.Price</td>
                     <td>@item.Type</td>
                     <td>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal_@item.Id">
-                            ویرایش
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="editModal_@item.Id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">ویرایش محصول</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <InputText class="form-control" @bind-Value="item.Name" placeholder="نام محصول را وارد کنید " />
-                                        <InputNumber class="form-control" @bind-Value="item.Price" placeholder="قیمت محصول را وارد کنید " style="margin-top: 5px;" />
-                                        <InputText class="form-control" @bind-Value="item.Type" placeholder="نوع محصول را وارد کنید " style="margin-top: 5px;" />
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-                                        <button type="button" class="btn btn-primary" @onclick="() => SaveEdit(item)">ذخیره تغییرات</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="btn btn-success" @onclick="() => EditP(item)">ویرایش</button>
                     </td>
                     <td><button class="btn btn-danger" @onclick="() => Del(item)">حذف</button></td>
                 </tr>
@@ -90,10 +75,12 @@ else
     </table>
 }
 
-@code
-{
+@code {
+    private bool OpenModal = false;
+    private string modalTitle = "";
     private IEnumerable<TableModel> tableModels { get; set; }
-    TableModel tableModel = new();
+    private TableModel tableModel = new();
+
     private async void Save()
     {
         if (tableModel.Id > 0)
@@ -106,23 +93,46 @@ else
         }
         tableModels = await _dsProduct.Table1Select();
         tableModel = new();
+        OpenModal = false;
         this.StateHasChanged();
     }
+
     protected override async Task OnInitializedAsync()
     {
         tableModels = await _dsProduct.Table1Select();
     }
+
     private async void SaveEdit(TableModel tm)
     {
         await _dsProduct.TableChange(2, tm);
         tableModels = await _dsProduct.Table1Select();
+        OpenModal = false;
         this.StateHasChanged();
     }
+
     private async void Del(TableModel tm)
     {
         await _dsProduct.TableChange(3, tm);
         tableModels = await _dsProduct.Table1Select();
         this.StateHasChanged();
     }
-}
 
+    private void OpenNewModal()
+    {
+        tableModel = new TableModel();
+        modalTitle = "محصول جدید";
+        OpenModal = true;
+    }
+
+    private void EditP(TableModel _tm)
+    {
+        tableModel = _tm;
+        modalTitle = "ویرایش محصول";
+        OpenModal = true;
+    }
+
+    private void CloseModal()
+    {
+        OpenModal = false;
+    }
+}
