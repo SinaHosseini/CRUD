@@ -132,3 +132,4 @@ C:\work file\BlazorApp2\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp2.bund
 C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.csproj.Up2Date
 C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.genruntimeconfig.cache
 C:\work file\BlazorApp2\obj\Debug\net8.0\ref\BlazorApp2.dll
+C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.sourcelink.json

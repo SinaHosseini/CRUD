@@ -5,6 +5,11 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\bootstrap.js" />
+    <None Include="wwwroot\js\bootstrap.js.map" />
+  </ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Dapper" Version="2.1.28" />
 		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.4" />

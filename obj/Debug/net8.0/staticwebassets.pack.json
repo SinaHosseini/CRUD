@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\app.css"
     },
     {
+      "Id": "C:\\work file\\BlazorApp2\\wwwroot\\bootstrap\\bootstrap.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\work file\\BlazorApp2\\wwwroot\\bootstrap\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.css.map"
+    },
+    {
       "Id": "C:\\work file\\BlazorApp2\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
@@ -19,6 +27,14 @@
     {
       "Id": "C:\\work file\\BlazorApp2\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\work file\\BlazorApp2\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\work file\\BlazorApp2\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorApp2.Microsoft.AspNetCore.StaticWebAssets.props",

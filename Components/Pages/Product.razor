@@ -2,79 +2,94 @@
 
 <PageTitle>Product</PageTitle>
 
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+
+<script src="wwwroot\js\bootstrap.js"></script>
 
 <h1>Product</h1>
+<div style="margin-top: 16px;">
+    <div class="col">
+        <div class="row">
+            <InputText class="form-control" @bind-Value="tableModel.Name" placeholder="نام محصول را وارد کنید " />
+        </div>
 
-<InputText @bind-Value="tableModel.Name" />
-<button class="btn btn-primary" @onclick="Save">ذخیره</button>
+        <div class="row" style="margin-top: 5px;">
+            <InputNumber class="form-control" @bind-Value="tableModel.Price" placeholder="قیمت محصول را وارد کنید " />
+        </div>
+        <div class="row" style="margin-top: 5px;">
+            <InputText class="form-control" @bind-Value="tableModel.Type" placeholder="نوع محصول را وارد کنید " />
+        </div>
+    </div>
+    <div class="col">
+        <button class="btn btn-success" style=" margin-top: 10px; text-align: center;" @onclick="Save">ذخیره</button>
+    </div>
+</div>
+
 @if (tableModels == null)
 {
     <p><em>Loading...</em></p>
 }
 else
-
-    foreach (TableModel item in tableModels)
-    {
-        <table class="table">
-            <thead>
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (TableModel item in tableModels)
+            {
                 <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Type</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var forecast in forecasts)
-                {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td>@item.Name</td>
-                        <td>@item.Price</td>
-                        <td>@item.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-        <div class="row">
-            <div class="col">
-                @item.Id
-            </div>
-            <div class="col">
-                @item.Name
-            </div>
-            <div class="col">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    ویرایش
-                </button>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.Type</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal_@item.Id">
+                            ویرایش
+                        </button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <InputText @bind-Value="tableModel.Name" />
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-                                <button class="btn btn-primary" @onclick="() => Edit(item)">ذحیره تغییرات</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="editModal_@item.Id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">ویرایش محصول</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <InputText class="form-control" @bind-Value="item.Name" placeholder="نام محصول را وارد کنید " />
+                                        <InputNumber class="form-control" @bind-Value="item.Price" placeholder="قیمت محصول را وارد کنید " style="margin-top: 5px;" />
+                                        <InputText class="form-control" @bind-Value="item.Type" placeholder="نوع محصول را وارد کنید " style="margin-top: 5px;" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                                        <button type="button" class="btn btn-primary" @onclick="() => SaveEdit(item)">ذخیره تغییرات</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <button class="btn btn-primary" @onclick="() => Del(item)">حذف</button>
-            </div>
-        </div>
-        <hr />
-    }
+                    </td>
+                    <td><button class="btn btn-danger" @onclick="() => Del(item)">حذف</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
+
 @code
 {
     private IEnumerable<TableModel> tableModels { get; set; }
@@ -96,17 +111,18 @@ else
     protected override async Task OnInitializedAsync()
     {
         tableModels = await _dsProduct.Table1Select();
-
     }
-    private async void Edit(TableModel tm)
+    private async void SaveEdit(TableModel tm)
     {
-        tableModel = tm;
+        await _dsProduct.TableChange(2, tm);
+        tableModels = await _dsProduct.Table1Select();
+        this.StateHasChanged();
     }
     private async void Del(TableModel tm)
     {
         await _dsProduct.TableChange(3, tm);
         tableModels = await _dsProduct.Table1Select();
-        tableModel = new();
         this.StateHasChanged();
     }
 }
+
