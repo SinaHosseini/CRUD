@@ -1,0 +1,40 @@
+﻿@code {
+    [Parameter] public bool Show { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public EventCallback OnSave { get; set; }
+    [Parameter] public string Title { get; set; }
+
+    private void Close()
+    {
+        Show = false;
+        OnClose.InvokeAsync();
+    }
+
+    private async Task Save()
+    {
+        await OnSave.InvokeAsync();
+        Close();
+    }
+}
+
+@if (Show)
+{
+    <div class="modal fade show" style="display: block;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">@Title</h1>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @ChildContent
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="Close">بستن</button>
+                    <button class="btn btn-success" @onclick="Save">ذخیره</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
