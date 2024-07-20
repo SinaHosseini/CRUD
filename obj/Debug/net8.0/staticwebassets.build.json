@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7+yi9z/zwMM51Ng5fYRZitbHK+StVAfjGR8aa7Q4yRU=",
+  "Hash": "orldUUp0EwBnuVpiY4bzE8D6ihS6do/QqbGsXPjdrSI=",
   "Source": "BlazorApp2",
   "BasePath": "_content/BlazorApp2",
   "Mode": "Default",
@@ -167,44 +167,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
-    },
-    {
-      "Identity": "C:\\work file\\BlazorApp2\\wwwroot\\js\\bootstrap.js",
-      "SourceId": "BlazorApp2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\work file\\BlazorApp2\\wwwroot\\",
-      "BasePath": "_content/BlazorApp2",
-      "RelativePath": "js/bootstrap.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\bootstrap.js"
-    },
-    {
-      "Identity": "C:\\work file\\BlazorApp2\\wwwroot\\js\\bootstrap.js.map",
-      "SourceId": "BlazorApp2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\work file\\BlazorApp2\\wwwroot\\",
-      "BasePath": "_content/BlazorApp2",
-      "RelativePath": "js/bootstrap.js.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\bootstrap.js.map"
     }
   ]
 }

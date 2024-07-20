@@ -26,7 +26,15 @@
                                 <InputNumber class="form-control" @bind-Value="tableModel.Price" placeholder="قیمت محصول را وارد کنید " />
                             </div>
                             <div class="row" style="margin-top: 5px;">
-                                <InputText class="form-control" @bind-Value="tableModel.Type" placeholder="نوع محصول را وارد کنید " />
+                                <select class="form-select" aria-label="Default select example" @bind="tableModel.Type">
+                                    <option selected>گروه محصول خود را انتخاب کنید</option>
+                                    <option value="گردنبند">گردنبند</option>
+                                    <option value="گوشواره">گوشواره</option>
+                                    <option value="دستبند">دستبند</option>
+                                    <option value="انگشتر">انگشتر</option>
+                                    <option value="سنجاق سینه">سنجاق سینه</option>
+                                    <option value="پا بند">پا بند</option>
+                                </select>
                             </div>
                         </div>
                     </div>
