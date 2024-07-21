@@ -1,4 +1,5 @@
-﻿@page "/products"
+﻿@using Type.Models
+@page "/products"
 
 <PageTitle>Product</PageTitle>
 <h1>Product</h1>
@@ -17,14 +18,14 @@
         </div>
         <div class="row" style="margin-top: 5px;">
             <select class="form-select" aria-label="Default select example" @bind="tableModel.Type">
-                <option value="">گروه محصول خود را انتخاب کنید</option>
-                <option value="گردنبند">گردنبند</option>
-                <option value="گوشواره">گوشواره</option>
-                <option value="دستبند">دستبند</option>
-                <option value="انگشتر">انگشتر</option>
-                <option value="سنجاق سینه">سنجاق سینه</option>
-                <option value="پا بند">پا بند</option>
-                <option value="ست">ست</option>
+                <option selected disabled>گروه محصول خود را وارد کنید</option>
+                @if (typeModels != null)
+                {
+                    @foreach (var type in typeModels)
+                    {
+                        <option value="@type.NameType">@type.NameType</option>
+                    }
+                }
             </select>
         </div>
     </div>
@@ -54,7 +55,7 @@ else
                     <td>@item.Id</td>
                     <td>@item.Name</td>
                     <td>@item.Price</td>
-                    <td>@item.Type</td>
+                    <td>@item.Type</td> <!-- نمایش نام نوع محصول -->
                     <td>
                         <button class="btn btn-success" @onclick="() => EditP(item)">ویرایش</button>
                     </td>
@@ -69,6 +70,7 @@ else
     private bool OpenModal = false;
     private string modalTitle = "";
     private IEnumerable<TableModel> tableModels { get; set; }
+    private IEnumerable<TypeModel> typeModels { get; set; }
     private TableModel tableModel = new();
 
     private async void Save()
@@ -90,6 +92,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         tableModels = await _dsProduct.Table1Select();
+        typeModels = await _dsProduct.TypeSelect();
     }
 
     private async void SaveEdit(TableModel tm)

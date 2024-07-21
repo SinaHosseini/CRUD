@@ -133,3 +133,5 @@ C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.csproj.Up2Date
 C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.genruntimeconfig.cache
 C:\work file\BlazorApp2\obj\Debug\net8.0\ref\BlazorApp2.dll
 C:\work file\BlazorApp2\obj\Debug\net8.0\BlazorApp2.sourcelink.json
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\work file\BlazorApp2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
