@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|solutionrelative:components\\pages\\product.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|c:\\work file\\blazorapp2\\model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|solutionrelative:model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|c:\\work file\\blazorapp2\\service\\product\\dataserviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|solutionrelative:service\\product\\dataserviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|c:\\work file\\blazorapp2\\service\\product\\idataserviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|solutionrelative:service\\product\\idataserviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|c:\\work file\\blazorapp2\\model\\typemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|solutionrelative:model\\typemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|c:\\work file\\blazorapp2\\components\\pages\\modal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{71FBA4CC-E5F2-4529-A5F5-6A126D913BC4}|BlazorApp2.csproj|solutionrelative:components\\pages\\modal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -18,32 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IDataServiceProduct.cs",
+              "DocumentMoniker": "C:\\work file\\BlazorApp2\\Service\\Product\\IDataServiceProduct.cs",
+              "RelativeDocumentMoniker": "Service\\Product\\IDataServiceProduct.cs",
+              "ToolTip": "C:\\work file\\BlazorApp2\\Service\\Product\\IDataServiceProduct.cs",
+              "RelativeToolTip": "Service\\Product\\IDataServiceProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:09:07.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataServiceProduct.cs",
+              "DocumentMoniker": "C:\\work file\\BlazorApp2\\Service\\Product\\DataServiceProduct.cs",
+              "RelativeDocumentMoniker": "Service\\Product\\DataServiceProduct.cs",
+              "ToolTip": "C:\\work file\\BlazorApp2\\Service\\Product\\DataServiceProduct.cs",
+              "RelativeToolTip": "Service\\Product\\DataServiceProduct.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T11:00:30.377Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Product.razor",
               "DocumentMoniker": "C:\\work file\\BlazorApp2\\Components\\Pages\\Product.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Product.razor",
-              "ToolTip": "C:\\work file\\BlazorApp2\\Components\\Pages\\Product.razor",
-              "RelativeToolTip": "Components\\Pages\\Product.razor",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAIMAAAAAAAAA",
+              "ToolTip": "C:\\work file\\BlazorApp2\\Components\\Pages\\Product.razor*",
+              "RelativeToolTip": "Components\\Pages\\Product.razor*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-21T10:47:53.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "TypeModel.cs",
+              "DocumentMoniker": "C:\\work file\\BlazorApp2\\Model\\TypeModel.cs",
+              "RelativeDocumentMoniker": "Model\\TypeModel.cs",
+              "ToolTip": "C:\\work file\\BlazorApp2\\Model\\TypeModel.cs",
+              "RelativeToolTip": "Model\\TypeModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:02:10.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Modal.razor",
               "DocumentMoniker": "C:\\work file\\BlazorApp2\\Components\\Pages\\Modal.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Modal.razor",
               "ToolTip": "C:\\work file\\BlazorApp2\\Components\\Pages\\Modal.razor",
               "RelativeToolTip": "Components\\Pages\\Modal.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-20T11:42:35.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductModel.cs",
+              "DocumentMoniker": "C:\\work file\\BlazorApp2\\Model\\ProductModel.cs",
+              "RelativeDocumentMoniker": "Model\\ProductModel.cs",
+              "ToolTip": "C:\\work file\\BlazorApp2\\Model\\ProductModel.cs",
+              "RelativeToolTip": "Model\\ProductModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T05:02:31.298Z",
               "EditorCaption": ""
             }
           ]

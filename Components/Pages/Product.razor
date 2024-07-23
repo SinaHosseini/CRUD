@@ -1,5 +1,7 @@
 ﻿@using Type.Models
 @page "/products"
+@inject IDataServiceProduct _dsProduct
+
 
 <PageTitle>Product</PageTitle>
 <h1>Product</h1>
@@ -9,29 +11,33 @@
 
 <!-- Modal Component -->
 <Modal Show="OpenModal" OnClose="CloseModal" OnSave="Save" Title="@modalTitle">
-    <div class="col">
-        <div class="row">
-            <InputText class="form-control" @bind-Value="tableModel.Name" placeholder="نام محصول را وارد کنید " />
-        </div>
-        <div class="row" style="margin-top: 5px;">
-            <InputNumber class="form-control" @bind-Value="tableModel.Price" placeholder="قیمت محصول را وارد کنید " />
-        </div>
-        <div class="row" style="margin-top: 5px;">
-            <select class="form-select" aria-label="Default select example" @bind="tableModel.Type">
-                <option selected disabled>گروه محصول خود را وارد کنید</option>
-                @if (typeModels != null)
-                {
-                    @foreach (var type in typeModels)
+    <EditForm Model="@tableModel" OnValidSubmit="@Save">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="col">
+            <div class="row">
+                <InputText class="form-control" @bind-Value="tableModel.Name" placeholder="نام محصول را وارد کنید " />
+            </div>
+            <div class="row" style="margin-top: 5px;">
+                <InputNumber class="form-control" @bind-Value="tableModel.Price" placeholder="قیمت محصول را وارد کنید " />
+            </div>
+            <div class="row" style="margin-top: 5px;">
+                <InputSelect class="form-select" aria-label="Default select example" @bind-Value="tableModel.IdType">
+                    <option selected disabled>گروه محصول خود را وارد کنید</option>
+                    @if (typeModels != null)
                     {
-                        <option value="@type.NameType">@type.NameType</option>
+                        @foreach (var type in typeModels)
+                        {
+                            <option value="@type.IdType">@type.NameType</option>
+                        }
                     }
-                }
-            </select>
+                </InputSelect>
+            </div>
         </div>
-    </div>
+    </EditForm>
 </Modal>
 
-@if (tableModels == null)
+@if (productModels == null)
 {
     <p><em>Loading...</em></p>
 }
@@ -44,18 +50,22 @@ else
                 <th>Name</th>
                 <th>Price</th>
                 <th>Type</th>
+                <th>Time Add</th>
+                <th>Time Update</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (TableModel item in tableModels)
+            @foreach (ProductModel item in productModels)
             {
                 <tr>
                     <td>@item.Id</td>
                     <td>@item.Name</td>
                     <td>@item.Price</td>
-                    <td>@item.Type</td> <!-- نمایش نام نوع محصول -->
+                    <td>@item.NameType</td>
+                    @* <td>@item.TimeAdd</td>
+                    <td>@item.TimeUpdate</td> *@
                     <td>
                         <button class="btn btn-success" @onclick="() => EditP(item)">ویرایش</button>
                     </td>
@@ -69,7 +79,7 @@ else
 @code {
     private bool OpenModal = false;
     private string modalTitle = "";
-    private IEnumerable<TableModel> tableModels { get; set; }
+    private IEnumerable<ProductModel> productModels { get; set; }
     private IEnumerable<TypeModel> typeModels { get; set; }
     private TableModel tableModel = new();
 
@@ -77,55 +87,52 @@ else
     {
         if (tableModel.Id > 0)
         {
-            await _dsProduct.TableChange(2, tableModel);
+            // tableModel.TimeUpdate = DateTime.Now;
+            await _dsProduct.ProductChange(2, tableModel);
         }
         else
         {
-            await _dsProduct.TableChange(1, tableModel);
+            // tableModel.TimeAdd = DateTime.Now;
+            await _dsProduct.ProductChange(1, tableModel);
         }
-        tableModels = await _dsProduct.Table1Select();
+        productModels = await _dsProduct.ProductModelSelect();
         tableModel = new();
         OpenModal = false;
-        this.StateHasChanged();
     }
 
     protected override async Task OnInitializedAsync()
     {
-        tableModels = await _dsProduct.Table1Select();
+        productModels = await _dsProduct.ProductModelSelect();
         typeModels = await _dsProduct.TypeSelect();
     }
 
-    private async void SaveEdit(TableModel tm)
+    private async void Del(ProductModel tm)
     {
-        await _dsProduct.TableChange(2, tm);
-        tableModels = await _dsProduct.Table1Select();
-        OpenModal = false;
-        this.StateHasChanged();
-    }
-
-    private async void Del(TableModel tm)
-    {
-        await _dsProduct.TableChange(3, tm);
-        tableModels = await _dsProduct.Table1Select();
-        this.StateHasChanged();
+        tableModel.Id = tm.Id;
+        await _dsProduct.ProductChange(3, tableModel);
+        productModels = await _dsProduct.ProductModelSelect();
     }
 
     private void OpenNewModal()
     {
-        tableModel = new TableModel();
         modalTitle = "محصول جدید";
         OpenModal = true;
     }
 
-    private void EditP(TableModel _tm)
+    private void EditP(ProductModel _tm)
     {
-        tableModel = _tm;
+        tableModel.Id = _tm.Id;
+        tableModel.Name = _tm.Name;
+        tableModel.Price = _tm.Price;
+        tableModel.IdType = _tm.IdType;
+        tableModel.TimeAdd = _tm.TimeAdd;
         modalTitle = "ویرایش محصول";
         OpenModal = true;
     }
 
     private void CloseModal()
     {
+        tableModel = new TableModel();
         OpenModal = false;
     }
 }
